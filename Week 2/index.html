@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>High Five Pizza</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1><div class="restaurant-brand">
+    <img src="images/group5-logo.jpg"
+         alt="Group 5 Pizza Restaurant Logo"
+         class="restaurant-logo">
+
+    <h1>High Five Pizza</h1>
+</div><input id="search" placeholder="Search Menu" aria-label="Search menu"><button id="cartButton">🛒 Cart (<span id="count">0</span>)</button><button id="loginButton">Log In</button></header>
+<nav id="nav"></nav>
+<section class="banners"><div>Fresh Pizza</div><div>Made Your Way</div><div>Great Deals</div></section>
+<main><aside><h3>Pizza Types</h3><div id="types"></div></aside><section id="menu" class="menu"></section></main>
+<dialog id="customize"><form method="dialog"><h2 id="pizzaTitle"></h2><label>Size <select id="size"><option value="small">Small</option><option value="medium">Medium</option><option value="large">Large</option></select></label><label><input type="checkbox" id="cheese"> Extra cheese (+$2)</label><p id="price"></p><button type="button" id="add">Add to Cart</button><button>Cancel</button></form></dialog>
+<dialog id="cartDialog"><h2>Your Cart</h2><div id="cartItems"></div><p id="total"></p><button id="clearCart">Clear Cart</button><button onclick="document.getElementById('cartDialog').close()">Close</button></dialog>
+<dialog id="loginDialog"><h2>Customer Accounts</h2><p>Login and registration are planned Sprint 1 features and are not implemented yet.</p><button onclick="document.getElementById('loginDialog').close()">Close</button></dialog>
+<script src="script.js"></script>
+</body></html>
